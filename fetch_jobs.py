@@ -32,7 +32,7 @@ ROLE_VARIANTS = [
     "ServiceNow Consultant",
     "ServiceNow Implementation",
 ]
-DATA_FILE = os.path.join(os.getcwd(), "data", "jobs.json")
+DATA_FILE = os.path.join(os.getcwd(), "public", "data", "jobs.json")
 
 
 def http_get_json(url, headers=None):

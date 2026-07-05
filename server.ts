@@ -41,7 +41,7 @@ async function startServer() {
 
   // Serve the jobs data
   app.get("/api/jobs", (req, res) => {
-    const dataPath = path.join(process.cwd(), "data", "jobs.json");
+    const dataPath = path.join(process.cwd(), "public", "data", "jobs.json");
     if (fs.existsSync(dataPath)) {
       res.sendFile(dataPath);
     } else {
