@@ -23,7 +23,7 @@ async function startServer() {
     };
     
     const pythonProcess = spawn("python3", [
-      path.join(process.cwd(), "servicenow-jobs", "fetch_jobs.py")
+      path.join(process.cwd(), "fetch_jobs.py")
     ], { env });
 
     let output = "";
